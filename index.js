@@ -39,10 +39,7 @@ app.get('/api/tasks',async (req,res)=>{
         title:info.data()['title'],
         description:info.data()['description'],
         isCompleted:info.data()['isCompleted'],
-        endDate:info.data()['endDate'],
-        comments:info.data()['comments'],
-        responsable:info.data()['responsable'],
-        tags:info.data()['tags']
+        endDate:info.data()['endDate']
     }))
     return res.status(200).json(response);
     }catch(except){
